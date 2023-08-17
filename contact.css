@@ -155,36 +155,3 @@ border-radius: 0.1rem;
 .btn:hover{
    color: #fff;
 }
-.card h1{
-    text-align: center;
-    font-size: 40px;
-    color: #1b0c3c;
-    }
-    .c1 p{
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    .c1 h4{
-        color: brown;
-        font-size: 30px;
-        margin-left: 20px;
-    }
-    .image1{
-        padding: 5px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .c2 p{
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    .c2 h4{
-        color: brown;
-        font-size: 30px;
-        margin-left: 20px;
-    }
-    .image2{
-        padding: 5px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
