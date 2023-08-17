@@ -9,84 +9,84 @@
     <link rel="stylesheet" href="https=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a07d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-wOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
     <script>
         $(document).ready(function()){
-$('.nav-links').click(function(){
-    $('ul').toggleClass('showMenu');
-})
+        
+$('.nav-links').click(function()){
+    $('ul').toggleClass('.fa-bars');
+}
         }
     </script>
 </head>
 <body>
-    <section class="container">
+    <section class="container2">
         <nav>
             <a class="logo"><img src="icon.png" alt=""></a>
                 <ul>
                     <li><a class="active">Accueil</a></li>
-                    <li><a href="#">Nos collections</a></li>
-                    <li><a href="#">Prestations</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="page1">About Us</a></li>
+                    <li><a href="page2">Gallery</a></li>
+                    <li><a href="page3">Nos Collections</a></li>
+                    <li><a href="page4">Contact</a></li>
                 </ul>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <i class="fa fa-bars" onclick="showMenu()"></i>
-           
-                    </div>
-                    
+                    <i class="fa fa-bars" id="Fabars" onclick="showMenu()"></i>
+                    </div> 
             <div class="A">
         <h1>Bienvenu à la maison CISEAUX d'OR</h1>
         <h2>Soyez-vous meme,Soyez-élegants!!!</h2>
         </div>
-        <h1>About Us</h1>
+        <h3>About Us</h3>
         </nav>
-    </section>
+    </section><br>
     <!----------about us-->
-    <section class="about-us">
-        <div class="row">
-            <div class="about-col">
-                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, inventore, quo nesciunt deleniti magni natus eligendi quidem, rem ratione et aperiam dolor beatae atque cum deserunt. Iure dolorem adipisci deserunt?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse sunt deserunt minus facilis aliquid. Repudiandae ullam expedita doloremque ab architecto vitae, tenetur cumque corporis temporibus eveniet, animi beatae neque.</p>
-              <a href="" class="hero-btn">Recherchez Maintenant</a>
-                </div>
-                <div class="about-col">
-                    <img src="equipe.jpg" alt="">
-                    </div>
-            </div>
-        </section>
-        
-    </div>
+
+
+        <div class="header">
+  <h1>GALLERY</h1>
+  <p>Admirez nos différents confections</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="s1.jpg" style="width:100%">
+    <img src="da1.jpg" style="width:100%">
+    <img src="s5.jpg" style="width:100%">
+    <img src="s4.jpg" style="width:100%">
+    <img src="b3.jpg" style="width:100%">
+    <img src="s2.jpg" style="width:100%">
+    <img src="aa6c.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="aa2c.jpg" style="width:100%">
+    <img src="da8.jpg" style="width:100%">
+    <img src="da7.jpg" style="width:100%">
+    <img src="da6.jpg" style="width:100%">
+    <img src="b1.jpg" style="width:100%">
+    <img src="da3.jpg" style="width:100%">
+    <img src="s3.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="b2.jpg" style="width:100%">
+    <img src="aa5c.jpg" style="width:100%">
+    <img src="pa1.jpg" style="width:100%">
+    <img src="aa11.jpg" style="width:100%">
+    <img src="s3.jpg" style="width:100%">
+    <img src="pa7.jpg" style="width:100%">
+    <img src="pa1.jpg" style="width:100%">
+  </div>
+</div>
+<section>
+
+    
     </section>
-    <section class="container1">
-        <div class="row">
-            <div class="card-title">
-                <h2> Modèles</h2>
-                </div>
-                <div class="modele">
-                    <div class="M1">
-                        <img src="aa2c.jpg" alt="">
-                        <img src="aa9c.jpg" alt="">
-                        <img src="aad.jpg" alt="">
-                    </div>
-                    <div class="M2">
-                        <img src="aa6c.jpg" alt="">
-                        <img src="aa7c.jpg" alt="">
-                        <img src="aa9c.jpg" alt="">
-                        </div>
-                        <div class="M3">
-                            <img src="aa3c.jpg" alt="">
-                            <img src="aa8c.jpg" alt="">
-                            <img src="aa10c.jpg" alt="">
-                            <img src="aa5c.jpg" alt="">
-                            </div>
-                            
-                            
-                            
-                    
-            </div>
-        </section>
+
+    
     <script src="index.js"></script>
 </body>
 </html>

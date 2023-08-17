@@ -15,11 +15,7 @@
         background: #1b0c3c;
     }
     .logo{
-        font-size: 35px;
-        font-weight: bold;
-        color: white;
-        padding: 0 100px;
-        line-height: 80px;
+        width: 100%;
     }
     nav ul{
 float: right;
@@ -39,7 +35,7 @@ margin-right: 20px;
         border-radius: 3px;
     }
     a.actve,a:hover{
-        border: 1px solid white;
+        border: 1px solid rgb(13, 44, 115);
         transition: .5s;
     }
     .nav-links{
@@ -66,6 +62,20 @@ font-size: 17px;
     @media (max-width: 310px) {
 .nav-links{
     display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1b0c3c;
+    /* top: 80px; */ top: 1000rem;
+    left: -20%;
+    text-align: center;
+    transition: all .5s;
+}
+.nav-links :active{
+    top: 0.5rem;
+}
+.fa-bars{
+display: block;
 }
 nav ul{
     position: fixed;
@@ -91,9 +101,10 @@ a.active,a:hover{
 }
 nav ul .showMenu{
 left: 0;
+display: block;
 }
 }
-.container{
+.container2{
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(aa4.jpg);
@@ -102,47 +113,175 @@ left: 0;
     color: #fff;
     height: calc(100vh - 50px); 
 }
-.container h1{
-    margin-top: 80px;
-    text-align: center;
-    font-size: 20px;
-}
-.A{
-    text-align: center;
-    margin-top: 100px;
+.container2 h1{
     font-size: 40px;
-    
-}
-.container1 h2{
     text-align: center;
-    font-size: 20px;
+    margin-top: 50px;
 }
-.modele{
-    
-    justify-content: space-between;
+.container2 h2{
+    font-size: 30px;
+    text-align: center; 
+    margin-top: 50px;
+}
+.container2 h3{
+    font-size: 30px;
+    text-align: center; 
+    margin-top: 10%;
 }
 .about-us{
-    display: flex;
-    width: 80%;
+     display: flex; 
+     flex-direction: row; 
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
+    background: rgb(121, 34, 127); 
 }
-.about-col{
-    flex-basis: 48%;
-    padding: 30px 2px;
+.B{
+    
+    margin-left: 15%;
+}
+@media (max-width:340px){
+    .about-us{
+     display: grid;
+        
+        grid-template-columns: repeat(1,1fr);
 
+        
+    }
+    .B{
+        flex-direction: column;
+    }
 }
-.about-col img{
-    width: 70%;
+.C img{
+    width: 100%;
+    /* margin-left: 80%; */
+    height: 100%;
+    margin-top: 20px;
+    
 }
-.about-col h1{
-    padding-top: 0;
+.B h1{
+font-size: 40px;
+margin-left: 20px;
+text-align: center;
+padding-top: 0;
+text-transform: uppercase;
 }
-.about-col p{
+.B p{
+    font-size: 20px;
+    margin-left: 20px;
+     margin-top: 20px;
     padding: 15px 0 25px;
+    text-decoration: dashed;
 }
-.hero-btn{
-    background-color: orangered;
-
+.btn{
+ display: inline-block;
+ padding: 0.2rem 2.5rem;
+ font-size: 1.8rem;
+ border: 0.1rem 1px solid;
+ background: orange;  
+ outline: 0;
+ cursor: pointer;
+ border-radius: 0.1rem; 
 }
+.btn:hover{
+    color: #fff;
+}
+.card{
+    
+}
+.card h1{
+text-align: center;
+font-size: 40px;
+color: #1b0c3c;
+}
+.c1 p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.c1 h4{
+    color: brown;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.image1{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.c2 p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.c2 h4{
+    color: brown;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.image2{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: flex; 
+    display: flex;
+    display: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  
+  .column {
+    /* -ms-flex: 25%;  */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      /* -ms-flex: 50%; */
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      /* -ms-flex: 100%; */
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+ 
+  .text h2{
+    font-size:20px;
+    text-align: center;
+  }
+  .text h4{
+    text-align: center;
+    font-size: 20px;
+  }
+  .text p{
+    text-align: center;
+    font-size: 20px;
+  }
+  
